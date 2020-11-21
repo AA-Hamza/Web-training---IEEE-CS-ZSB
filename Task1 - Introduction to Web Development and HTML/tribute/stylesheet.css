@@ -1,0 +1,32 @@
+* {
+      font-family: Impact, Charcoal, sans-serif;
+}
+
+body {
+    background-color:#34626c;
+}
+
+.center_img{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.content_holder {
+    background-color:#CFD3CE;
+    padding: 5%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: darkslategrey;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right:auto;
+    width: 65%;
+    position: center;
+}
+
+.text{
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
