@@ -1,0 +1,15 @@
+* {
+      font-family: Impact, Charcoal, sans-serif;
+}
+body {
+    background-color: #E8E8E8;
+}
+
+.center_img{
+    text-align: center;
+}
+.text{
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
