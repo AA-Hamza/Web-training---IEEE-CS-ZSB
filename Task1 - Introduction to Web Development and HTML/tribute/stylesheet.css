@@ -31,6 +31,7 @@ body {
 @media (max-width: 1080px) {
     .content_holder {
         margin: 1em 0.5em;
+        padding: 3em;
     }
     .center_img img {
         max-width:100%;
