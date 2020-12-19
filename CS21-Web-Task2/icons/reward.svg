@@ -1,0 +1,12 @@
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_2" y="17.769476" x="8.002302" width="24"  stroke-width="2"  stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" height="16" fill="none"/>
+  <rect id="svg_3" y="11.769476" x="6.002302" width="28" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" height="6" fill="none"/>
+  <rect id="svg_4" y="17.769476" x="17.002302" width="6" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" height="16" fill="none"/>
+  <rect id="svg_5" y="11.769476" x="17.002302" width="6" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" height="6" fill="none"/>
+  <polygon style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#f4f2ee;" id="svg_6" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" points="20.00226593017578,10.769480600953102 23.00226402282715,7.769480600953102 22.00226402282715,5.769480600953102 20.00226593017578,5.769480600953102 18.00230598449707,5.769480600953102 17.00230598449707,7.769480600953102 " fill="none"/>
+  <polyline style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#f4f2ee;" id="svg_7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" points="23.00226402282715,7.769480600953102 27.00226402282715,6.769480600953102 29.00226402282715,8.769480600953102 29.00226402282715,11.769480600953102 " fill="none"/>
+  <polyline style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#f4f2ee;" id="svg_8" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" points="17.00230598449707,7.769480600953102 13.00230598449707,6.769480600953102 11.00230598449707,8.769480600953102 11.00230598449707,11.769480600953102 " fill="none"/>
+ </g>
+</svg>
