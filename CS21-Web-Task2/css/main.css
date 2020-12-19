@@ -6,7 +6,6 @@ body{
     margin: auto;
     font-family: 'Lato', sans-serif;;
     max-width: 1920px;
-    background: rgb(248, 248, 248);
     box-shadow: 0 0 50px grey;
 }
 
@@ -79,6 +78,10 @@ button {
     font-weight: bolder;
     letter-spacing: 3px;
     cursor: pointer;
+}
+button a {
+    text-decoration: none;
+    color: white;
 }
 
 .second-page, .fifth-page , .sixth-page, .seventh-page{
