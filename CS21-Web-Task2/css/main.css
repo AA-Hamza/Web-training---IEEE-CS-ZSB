@@ -247,7 +247,9 @@ img {
 
 @media (max-width: 720px) {
     .header-right {
-        display: none;
+        float: none;
+        display: inline-flex;
+        text-align: center;
     }
     .header {
         text-align: center;
