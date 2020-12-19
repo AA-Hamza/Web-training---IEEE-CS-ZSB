@@ -190,3 +190,43 @@ img {
     border-style: solid;
     border-color: lightgray;
 }
+
+.play-button-icon {
+    display:inline-block;
+    scale: 3.0;
+    padding: 2rem;
+}
+
+.fourth-page h2 {
+    padding-top: 2em;
+    font-weight: lighter;
+}
+
+.fourth-page p {
+    font-weight: bolder;
+    color: #7f7f7f;
+    font-size: 1.5rem;
+}
+
+.fourth-page-background p {
+    color: white;
+    font-size: 1em;
+}
+
+.fourth-page {
+    background: rgb(248, 248, 248);
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    padding-bottom: 3em;
+}
+
+.fourth-page-background {
+    background-image: linear-gradient(0deg, rgba(0, 74, 170, 0.2), rgba(0, 74, 170, 0.2)), url("../images/blured_chill.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10em;
+    padding-bottom: 6em;
+    color:white;
+}
