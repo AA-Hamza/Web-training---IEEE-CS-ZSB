@@ -87,6 +87,17 @@ button a {
 .second-page, .fifth-page , .sixth-page, .seventh-page{
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "text" "img";
+}
+
+.left-section {
+    grid-area: "text";
+}
+.right-section {
+    grid-area: "img";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -124,11 +135,6 @@ img {
     overflow: hidden;
 }
 */
-.right-section {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .second-page .right-section {
     background-image: url("../images/building_thingy.jpeg");
@@ -237,4 +243,48 @@ img {
     padding-top: 10em;
     padding-bottom: 6em;
     color:white;
+}
+
+@media (max-width: 720px) {
+    .header-right {
+        display: none;
+    }
+    .header {
+        text-align: center;
+        padding-bottom: 0em;
+    }
+    .header a.logo{
+        float: none;
+    }
+    h1 {
+        padding: 1.5em;
+    }
+
+    h1 span {
+        padding-top: 1em;
+    }
+
+    .second-page, .fifth-page , .sixth-page, .seventh-page{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "text"
+            "img";
+    }
+    .left-section {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .right-section {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    body{
+        display: inline-block;
+    }
 }
