@@ -220,6 +220,9 @@ img {
     font-weight: bolder;
     color: #7f7f7f;
     font-size: 1.5rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    
 }
 
 .fourth-page-background p {
