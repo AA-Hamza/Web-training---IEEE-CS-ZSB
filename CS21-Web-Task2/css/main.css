@@ -79,6 +79,11 @@ button {
     letter-spacing: 3px;
     cursor: pointer;
 }
+button:hover {
+    box-shadow: 5px 10px 10px grey;
+    scale: 1.05;
+}
+
 button a {
     text-decoration: none;
     color: white;
