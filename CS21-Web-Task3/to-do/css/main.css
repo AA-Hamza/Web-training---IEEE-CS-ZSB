@@ -83,3 +83,8 @@ span.close {
 span.close:hover {
     background-color: rgb(245, 82, 82);
 }
+
+.checked {
+    text-decoration: line-through 0.11em;
+    font-style: italic;
+}

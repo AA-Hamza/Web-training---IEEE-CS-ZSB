@@ -1,0 +1,100 @@
+:root {
+    --bg: #282828;
+    --red: #cc241d;
+    --green: #98971a;
+    --yellow: #d79921;
+    --transparentyellow: #d7992155;
+    --blue: #458588;
+    --purple: #b16286;
+    --aqua: #689d61;
+    --transparentaqua: #689d6177;
+    --gray: #a89984;
+    --darkergray: #928374;
+    --lightred: #fb4934;
+    --transparentlightred: #fb493477;
+    --greenergreen: #b8bb26;
+    --bg0_h: #1d2021;
+    --bg0: #282828;
+    --bg1: #3c3836;
+    --bg2: #504945;
+    --bg3: #665c54;
+    --fg0: #fbf1c7;
+    --fg1: #ebdbb2;
+    --fg2: #d5c4a1;
+    --fg3: #bdae93;
+    --fg4: #a89984;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    background-color: #17191a;
+    font-size: 1em;
+}
+
+.header {
+    text-align: center;
+    color: var(--fg1);
+    font-size: 1.3em;
+}
+
+button {
+    font-size: 1em;
+    border-radius: 0.2em;
+    margin: 0.6em;
+    padding: 0.3em 1.2em 0.3em 1.2em;
+    border-style: none;
+    background-color: var(--green);
+    background-color: var(--aqua);
+    color: var(--fg0);
+}
+
+input {
+    font-size: 1em;
+    background-color: var(--bg1);
+    color: var(--fg0);
+    border-radius: 0.2em;
+    border-style: none;
+    padding: 0.3em 0.4em 0.3em 0.4em;
+}
+
+.weather-card {
+    display: inline-block;
+    background-color: var(--darkergray);
+    min-width: 225px;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 1em;
+    color: var(--fg0);
+    box-shadow: 10px 12px  var(--transparentaqua);
+}
+
+.city-name h4{
+    margin: 0;
+    padding: 0;
+    color: var(--fg2);
+}
+
+.city-name h2{
+    font-size: 2.1em;
+    padding: 0em;
+    margin: 0em;
+}
+
+.city-temp {
+    margin-top: 0.5em;
+    font-size: 4em;
+    font-weight: normal;
+    text-align: center;
+}
+
+.weather-card figure{
+    text-align: center;
+}
+
+.weather-grid {
+    text-align: center;
+}

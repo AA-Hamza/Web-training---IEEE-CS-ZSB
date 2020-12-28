@@ -11,11 +11,11 @@
             <button onclick="newElement()">ADD</button>
         </div>
         <ul id="items-list">
-            <li>Study For Finals</li>
             <li>Free the ducks</li>
             <li>write an essay on why js sucks</li>
             <li>Actually write an essay on how the web sucks</li>
             <li>Don't Write above essays, slack a bit</li>
+            <li>LOW PRIORITY: Study For Finals</li>
         </ul>
         <script>
             /****** For demonstrating purposes ********/
@@ -38,6 +38,13 @@
                 }
             }
             /****** Above Functions were just to make examples I made in html work like expected ******/
+
+            let list = document.querySelector('ul');
+            list.addEventListener('click', function(ev) {
+                if (ev.target.tagName === 'LI') {
+                    ev.target.classList.toggle('checked');
+                }
+            }, false);
 
             function newElement() {
                 let inputValue = document.getElementById("input-field").value;

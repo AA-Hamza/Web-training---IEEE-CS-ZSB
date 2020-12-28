@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Weather APP</title>
+</head>
+<body>
+    <div class="header">
+        <h3>
+            Choose your city: 
+        </h3>
+        <input id="city-input-field" type="text" placeholder="ex: Cairo, Egypt">
+        <button id="enter-button" onclick="add_city()">Enter</button>
+    </div>
+
+    <div id="weather-grid" class="weather-grid">
+        <!--
+        <div class="weather-card">
+            <div class="city-name">
+                <h2>Cairo</h2>
+                <h4>Egypt</h4>
+            </div>
+            <h2 class="city-temp">
+                69
+                <sup>°C</sup>
+            </h2>
+            <figure>
+                <img class="weather-icon" src="https://openweathermap.org/img/wn/04d@2x.png">
+                <figcaption>OVERCAST CLOUDS</figcaption>
+            </figure>
+        </div>
+        <div class="weather-card">
+            <div class="city-name">
+                <h2>Cairo</h2>
+                <h4>Egypt</h4>
+            </div>
+            <h2 class="city-temp">
+                69
+                <sup>°C</sup>
+            </h2>
+            <figure>
+                <img class="weather-icon" src="https://openweathermap.org/img/wn/04d@2x.png">
+                <figcaption>OVERCAST CLOUDS</figcaption>
+            </figure>
+        </div>
+        <div class="weather-card">
+            <div class="city-name">
+                <h2>Cairo</h2>
+                <h4>Egypt</h4>
+            </div>
+            <h2 class="city-temp">
+                69
+                <sup>°C</sup>
+            </h2>
+            <figure>
+                <img class="weather-icon" src="https://openweathermap.org/img/wn/04d@2x.png">
+                <figcaption>OVERCAST CLOUDS</figcaption>
+            </figure>
+        </div>
+        <div class="weather-card">
+            <div class="city-name">
+                <h2>Cairo</h2>
+                <h4>Egypt</h4>
+            </div>
+            <h2 class="city-temp">
+                69
+                <sup>°C</sup>
+            </h2>
+            <figure>
+                <img class="weather-icon" src="https://openweathermap.org/img/wn/04d@2x.png">
+                <figcaption>OVERCAST CLOUDS</figcaption>
+            </figure>
+        </div>
+    -->
+    </div>
+    <script>
+        function add_city() {
+            api_key = "b1fc32d93e0ecc027791512b32a64015";
+            let input_value = document.getElementById("city-input-field").value;
+
+            if (input_value === '') {
+                alert("You must enter a city name");
+            }
+            else {
+                console.log(input_value);
+                //const url = `api.openweathermap.org/data/2.5/weather?q=${input_value}&appid=${api_key}`;
+                const url = `https://api.openweathermap.org/data/2.5/weather?q=${input_value}&appid=${api_key}&units=metric`;
+                fetch(url).then(response => response.json()).then(data => {
+                    const {main, name, sys, weather} = data;
+                    const img = `https://openweathermap.org/img/wn/${weather[0]["icon"]}@2x.png`;
+                    const weather_card = document.createElement("div");
+                    weather_card.classList.add("weather-card");
+                    const markup = `
+                        <div class="city-name">
+                            <h2>${name}</h2>
+                            <h4>${sys.country}</h4>
+                        </div>
+                        <h2 class="city-temp">
+                            ${Math.round(main.temp)}
+                            <sup>°C</sup>
+                        </h2>
+                        <figure>
+                            <img class="weather-icon" src="${img}">
+                            <figcaption>${weather[0]["description"]}</figcaption>
+                        </figure>
+                    `;
+                    weather_card.innerHTML = markup;
+                    document.getElementById("weather-grid").appendChild(weather_card);
+                }).catch(() => {
+                    alert("Not a vaild city name");
+                });
+            }
+
+        }
+    </script>
+
+</body>
+</html>
