@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="header">
-        <input type="text" placeholder="test aganist user input from 1..99 , space separted" id="text-field">
+        <input type="text" placeholder="test aganist user input from 1..50 , space separted" id="text-field">
         <button onclick="fill_elements()" id="fill-button">Fill</button>
         <button style="display:block;margin: auto; margin-top: 1em;" onclick="random_10()" id="random-button">Generate 10 random numbers</button>
         <button style="display:block;margin: auto; margin-top: 1em;" onclick="bubble_sorting()" id="sort-button">Sort</button>
@@ -35,7 +35,7 @@
             let new_size = 0;
             for (let i = 0; i < numbers.length; ++i) {
                 let tmp = Number(numbers[i]);
-                if (!isNaN(tmp) && tmp < 99 && tmp > 0) {
+                if (!isNaN(tmp) && tmp <= 50 && tmp > 0) {
                     numbers[new_size++] = tmp;
                 }
             }
