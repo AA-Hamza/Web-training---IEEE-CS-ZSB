@@ -1,5 +1,5 @@
 :root {
-    --bg: #282828;
+    --bg: #17191a;
     --red: #cc241d;
     --green: #98971a;
     --yellow: #d79921;
@@ -31,7 +31,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: sans-serif;
-    background-color: #17191a;
+    background-color: var(--bg);
     font-size: 1em;
 }
 

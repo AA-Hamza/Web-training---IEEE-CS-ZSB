@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visual-bubblesort</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        <input type="text" placeholder="test aganist user input from 1..99 , space separted" id="text-field">
+        <button onclick="fill_elements()" id="fill-button">Fill</button>
+        <button style="display:block;margin: auto; margin-top: 1em;" onclick="random_10()" id="random-button">Generate 10 random numbers</button>
+        <button style="display:block;margin: auto; margin-top: 1em;" onclick="bubble_sorting()" id="sort-button">Sort</button>
+    </div>
+    <div class="visual-rep" id="visual-rep">
+    </div>
+
+    <script>
+        function add_value_column(val) {
+            let col = document.createElement("div");
+            col.textContent = val;
+            col.classList.add("value-column");
+            col.style.height = `${val}rem`;
+
+            let rep = document.getElementById("visual-rep");
+            rep.appendChild(col);
+        }
+
+        function fill_elements() {
+            const input_field = document.getElementById("text-field").value;
+
+            let numbers = input_field.split(" ");
+
+            let new_size = 0;
+            for (let i = 0; i < numbers.length; ++i) {
+                let tmp = Number(numbers[i]);
+                if (!isNaN(tmp) && tmp < 99 && tmp > 0) {
+                    numbers[new_size++] = tmp;
+                }
+            }
+            if (numbers.length != new_size) {
+                alert("Ignored some of your input, not valid numbers");
+            }
+            numbers.length = new_size;
+
+            console.log(numbers);
+
+            for  (let i = 0; i < numbers.length; ++i) {
+                add_value_column(numbers[i]);
+            }
+        }
+
+        function random_10() {
+            for (let i = 0; i < 10; ++i) {
+                add_value_column(Math.floor(Math.random() * 49)+1);
+            }
+        }
+
+        async function test_swap(a, b, delay) {
+
+            let original_color = a.style.backgroundColor;
+            a.style.backgroundColor = "var(--purple)";
+            b.style.backgroundColor = "var(--purple)";
+
+            await new Promise(resolve =>
+                setTimeout(() => {
+                resolve();
+            }, delay)
+            );
+            
+            if (Number(a.textContent) > Number(b.textContent)) {
+                let tmp = b.innerHTML;
+                let tmp_height = b.style.height;
+                b.innerHTML = a.innerHTML;
+                a.innerHTML = tmp;
+                b.style.height = a.style.height;
+                a.style.height = tmp_height;
+            }
+            a.style.backgroundColor = original_color;
+            b.style.backgroundColor = original_color;
+        }
+
+        async function bubble_sorting() {
+            let delay = 500;
+            let elements = document.getElementsByClassName("value-column");
+            for (let i = 0; i < elements.length; ++i) {
+                elements[i].style.backgroundColor = "var(--blue)";
+            }
+            for (let i = elements.length-1; i > 0; --i) {
+                for (let j = 0; j < i; ++j) {
+                    test_swap(elements[j], elements[j+1], delay);
+                    await new Promise(resolve =>
+                        setTimeout(() => {
+                        resolve();
+                    }, delay)
+                    );
+                }
+                elements[i].style.backgroundColor = "var(--green)";
+            }
+            elements[0].style.backgroundColor = "var(--green)";
+        }
+    </script>
+</body>
+</html>
