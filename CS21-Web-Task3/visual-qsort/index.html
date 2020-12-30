@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visual qsort</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        <div style="display: block">
+        <input type="text" placeholder="test aganist user input from 1..50 , space separted" id="text-field">
+        <button onclick="fill_elements()" id="fill-button">Fill</button>
+        </div>
+        <button style="margin: auto; margin-top: 1em;" onclick="random_10()" id="random-button">Generate 10 random numbers</button>
+        <button style="margin: auto; margin-top: 1em;" onclick="erase_elements()" id="erase-button">Clear</button>
+        <button style="display:block;margin: auto; margin-top: 1em;" onclick="qsort()" id="sort-button">Sort</button>
+    </div>
+    <div class="visual-rep" id="visual-rep">
+    </div>
+    <script src="src/page.js"></script>
+    <script src="src/script.js"></script>
+</body>
+</html>
