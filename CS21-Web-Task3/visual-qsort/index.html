@@ -12,12 +12,20 @@
         <input type="text" placeholder="test aganist user input from 1..50 , space separted" id="text-field">
         <button onclick="fill_elements()" id="fill-button">Fill</button>
         </div>
+
+        <div class="slide-container">
+            <span>Speed:</span>
+            <input type="range" min="0" max="1500" value="1000" class="slider" id="delay-range">
+        </div>
         <button style="margin: auto; margin-top: 1em;" onclick="random_10()" id="random-button">Generate 10 random numbers</button>
         <button style="margin: auto; margin-top: 1em;" onclick="erase_elements()" id="erase-button">Clear</button>
         <button style="display:block;margin: auto; margin-top: 1em;" onclick="qsort()" id="sort-button">Sort</button>
     </div>
     <div class="visual-rep" id="visual-rep">
     </div>
+    <script>
+        let delay = 500;
+    </script>
     <script src="src/page.js"></script>
     <script src="src/script.js"></script>
 </body>

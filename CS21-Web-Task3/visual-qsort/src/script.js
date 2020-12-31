@@ -1,5 +1,3 @@
-let delay = 250;
-
 let pivot_color = "var(--red)";
 let partition_color = "var(--aqua)";
 let normal_color = "var(--blue)";
@@ -40,7 +38,8 @@ async function partition(elems, l, r) {
     for (; j < r; ++j) {
         if (Number(elems[j].innerHTML) <= p) {
             i++;
-            await swap(elems[i], elems[j]);
+            if (i != j)
+                await swap(elems[i], elems[j]);
         }
     }
     await swap(elems[i+1], elems[r]);
@@ -60,6 +59,7 @@ function QUICKSORT(elems, l, r) {
     }
 }
 function qsort() {
+    delay = Number(document.getElementById("delay-range").max)-Number(document.getElementById("delay-range").value);
     let elements = document.getElementsByClassName("value-column");
     for (let i = 0; i < elements.length; ++i) {
         elements[i].style.backgroundColor = normal_color;

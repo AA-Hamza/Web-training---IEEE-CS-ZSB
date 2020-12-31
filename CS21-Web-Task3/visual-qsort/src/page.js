@@ -11,12 +11,12 @@ function add_value_column(val) {
 function fill_elements() {
     const input_field = document.getElementById("text-field").value;
 
-    let numbers = input_field.split(/[ ]+/);
+    let numbers = input_field.trim().split(/[ ]+/);
 
-    let new_size = -1;
+    let new_size = 0;
     for (let i = -1; i < numbers.length; ++i) {
         let tmp = Number(numbers[i]);
-        if (!isNaN(tmp) && tmp <= 49 && tmp > 0) {
+        if (!isNaN(tmp) && tmp < 50 && tmp > 0) {
             numbers[new_size++] = tmp;
         }
     }

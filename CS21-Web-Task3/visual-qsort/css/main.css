@@ -83,3 +83,21 @@ button:hover {
     margin: 5px;
     vertical-align: bottom;
 }
+
+span {
+    color: var(--fg0);
+}
+
+.slider {
+    width: 25%;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.slide-container {
+    padding: 1em;
+}
+
+.slider-container button {
+    padding: 0;
+}
