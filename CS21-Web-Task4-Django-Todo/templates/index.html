@@ -1,43 +1,44 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <p><a href="/create"><button class="add-button" type="button">Add Item</button></a></p>
+    {% if user.is_authenticated %}
+        <p><a href="/create"><button class="add-button" type="button">Add Item</button></a></p>
+        {% for item in object_list %}
+            {% if item.priority == "HIGH" %}
+                <div class="item-entry high-priority">
+                    <span>{{ item.text }}</span>
+                    <span class="button-right"><a href = "{% url 'update' item.pk %}"><button type="button">Update Item</button></a></span>
+                    <span>
+                        <form method="POST" action="{% url 'delete' item.pk%}">
+                           {% csrf_token %}<input type="submit" value="DELETE">
+                        </form>
+                    </span>
+                </div>
+            {% endif %}
+        {% endfor %}
 
-    {% for item in object_list %}
-    {% if item.priority == "HIGH" %}
-        <div class="item-entry high-priority">
-            <span>{{ item.text }}</span>
-            <span class="button-right"><a href = "{% url 'update' item.pk %}"><button type="button">Update Item</button></a></span>
-            <span>
-                <form method="POST" action="{% url 'delete' item.pk%}">
-                   {% csrf_token %}<input type="submit" value="DELETE">
-                </form>
-            </span>
-        </div>
-    {% endif %}
-    {% endfor %}
+        {% for item in object_list %}
+            {% if item.priority == "NORMAL" %}
+                <div class="item-entry normal-priority">
+                    <span>{{ item.text }}</span>
+                    <span class="button-right"><a href = "{% url 'update' item.pk %}"><button type="button">Update Item</button></a></span>
+                    <form method="POST" action="{% url 'delete' item.pk%}">
+                       {% csrf_token %}<input type="submit" value="DELETE">
+                    </form>
+                </div>
+            {% endif %}
+        {% endfor %}
 
-    {% for item in object_list %}
-    {% if item.priority == "NORMAL" %}
-        <div class="item-entry normal-priority">
-            <span>{{ item.text }}</span>
-            <span class="button-right"><a href = "{% url 'update' item.pk %}"><button type="button">Update Item</button></a></span>
-            <form method="POST" action="{% url 'delete' item.pk%}">
-               {% csrf_token %}<input type="submit" value="DELETE">
-            </form>
-        </div>
+        {% for item in object_list %}
+            {% if item.priority == "LOW" %}
+                <div class="item-entry low-priority">
+                    <span>{{ item.text }}</span>
+                    <span class="button-right"><a href = "{% url 'update' item.pk %}"><button type="button">Update Item</button></a></span>
+                    <form method="POST" action="{% url 'delete' item.pk%}">
+                       {% csrf_token %}<input type="submit" value="DELETE">
+                    </form>
+                </div>
+            {% endif %}
+        {% endfor %}
     {% endif %}
-    {% endfor %}
-
-    {% for item in object_list %}
-    {% if item.priority == "LOW" %}
-        <div class="item-entry low-priority">
-            <span>{{ item.text }}</span>
-            <span class="button-right"><a href = "{% url 'update' item.pk %}"><button type="button">Update Item</button></a></span>
-            <form method="POST" action="{% url 'delete' item.pk%}">
-               {% csrf_token %}<input type="submit" value="DELETE">
-            </form>
-        </div>
-    {% endif %}
-    {% endfor %}
 {% endblock content %}

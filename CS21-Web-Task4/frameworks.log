@@ -1,0 +1,135 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.9)  19 JAN 2021 04:45
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**frameworks.tex
+(./frameworks.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-12-07> xparse <2020-03-03>
+(/home/ahmed/.TinyTeX/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
+(/home/ahmed/.TinyTeX/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@chapter=\count178
+\c@section=\count179
+\c@subsection=\count180
+\c@subsubsection=\count181
+\c@paragraph=\count182
+\c@subparagraph=\count183
+\c@figure=\count184
+\c@table=\count185
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/home/ahmed/.TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/ahmed/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/home/ahmed/.TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/ahmed/.TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/home/ahmed/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/home/ahmed/.TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(/home/ahmed/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count186
+\l__pdf_internal_box=\box47
+)
+(./frameworks.aux)
+\openout1 = `frameworks.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+
+(/home/ahmed/.TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/home/ahmed/.TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 62.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 62.
+
+[1
+
+{/home/ahmed/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<memory-allocation-comparison.jpg, id=9, 549.55313pt x 532.23843pt>
+File: memory-allocation-comparison.jpg Graphic file (type jpg)
+<use memory-allocation-comparison.jpg>
+Package pdftex.def Info: memory-allocation-comparison.jpg  used on input line 6
+6.
+(pdftex.def)             Requested size: 390.0pt x 377.72137pt.
+<startup-time-comparison.jpg, id=10, 549.55313pt x 509.65407pt>
+File: startup-time-comparison.jpg Graphic file (type jpg)
+<use startup-time-comparison.jpg>
+Package pdftex.def Info: startup-time-comparison.jpg  used on input line 69.
+(pdftex.def)             Requested size: 390.0pt x 361.6936pt.
+<dom-manipulation-comparison.jpg, id=11, 549.55313pt x 512.66531pt>
+File: dom-manipulation-comparison.jpg Graphic file (type jpg)
+<use dom-manipulation-comparison.jpg>
+Package pdftex.def Info: dom-manipulation-comparison.jpg  used on input line 72
+.
+(pdftex.def)             Requested size: 390.0pt x 363.83063pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1 <./memory-allocation-comparison.jpg>] [2 <./startup-time-comparison.jpg>]
+[3 <./dom-manipulation-comparison.jpg>] (./frameworks.aux) ) 
+Here is how much of TeX's memory you used:
+ 920 strings out of 481331
+ 14879 string characters out of 5917527
+ 279725 words of memory out of 5000000
+ 17823 multiletter control sequences out of 15000+600000
+ 405548 words of font info for 34 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 66i,6n,72p,681b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
+</home/ahmed/.TinyT
+eX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/ahmed/.TinyTeX/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></home/ahmed/.TinyTeX/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on frameworks.pdf (4 pages, 225175 bytes).
+PDF statistics:
+ 32 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+
